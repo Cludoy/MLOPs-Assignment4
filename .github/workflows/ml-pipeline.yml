@@ -25,3 +25,9 @@ jobs:
 
             - name: Model Dry Test
               run: python -c "import torch; print('Model environment ready!')"
+
+            - name: Upload project documentation
+              uses: actions/upload-artifact@v6
+              with:
+                name: project-doc
+                path: README.md
